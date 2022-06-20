@@ -1,5 +1,5 @@
 # KryCRM
-CRM Application for ASM
+Krysson CRM Application 
 
 ## Features 
 - Store & Organize 
