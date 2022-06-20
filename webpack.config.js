@@ -1,7 +1,7 @@
 const path = require("path")
 
 module.exports = {
-  entry: "./app/Main.js",
+  entry: "./app/index.html", // changed from Main.js for testing
   output: {
     publicPath: "/",
     path: path.resolve(__dirname, "app"),
@@ -10,8 +10,7 @@ module.exports = {
   mode: "development",
   devtool: "source-map",
   devServer: {
-    host: "0.0.0.0",
-    allowedHosts: "all",
+    allowedHosts: "all", // this solved the headers issue in gitpod
     port: 3000,
     static: {
       directory: path.join(__dirname, "app")
